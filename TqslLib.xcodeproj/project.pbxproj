@@ -10,8 +10,24 @@
 		6FB461E1141AC83A00402AA2 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE1EA3914184A7100F27275 /* libcrypto.dylib */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
-		9D210275186611BF00D2DF48 /* winstrdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D210274186611BF00D2DF48 /* winstrdefs.h */; };
 		9D941E321BC984EE005F38A6 /* libdb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D941E311BC984EE005F38A6 /* libdb.dylib */; };
+		9D941E3B1BC98AD8005F38A6 /* adif.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E331BC98AD8005F38A6 /* adif.h */; };
+		9D941E3C1BC98AD8005F38A6 /* cabrillo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E341BC98AD8005F38A6 /* cabrillo.h */; };
+		9D941E3D1BC98AD8005F38A6 /* location.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E351BC98AD8005F38A6 /* location.h */; };
+		9D941E3E1BC98AD8005F38A6 /* openssl_cert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E361BC98AD8005F38A6 /* openssl_cert.h */; };
+		9D941E3F1BC98AD8005F38A6 /* tqslconvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E371BC98AD8005F38A6 /* tqslconvert.h */; };
+		9D941E401BC98AD8005F38A6 /* tqslerrno.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E381BC98AD8005F38A6 /* tqslerrno.h */; };
+		9D941E411BC98AD8005F38A6 /* tqsllib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E391BC98AD8005F38A6 /* tqsllib.h */; };
+		9D941E421BC98AD8005F38A6 /* xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E3A1BC98AD8005F38A6 /* xml.h */; };
+		9D941E441BC98AE5005F38A6 /* winstrdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E431BC98AE5005F38A6 /* winstrdefs.h */; };
+		9D941E4D1BC98AFE005F38A6 /* adif.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E451BC98AFE005F38A6 /* adif.cpp */; };
+		9D941E4E1BC98AFE005F38A6 /* cabrillo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E461BC98AFE005F38A6 /* cabrillo.cpp */; };
+		9D941E4F1BC98AFE005F38A6 /* location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E471BC98AFE005F38A6 /* location.cpp */; };
+		9D941E501BC98AFE005F38A6 /* openssl_cert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E481BC98AFE005F38A6 /* openssl_cert.cpp */; };
+		9D941E511BC98AFE005F38A6 /* tqslconvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E491BC98AFE005F38A6 /* tqslconvert.cpp */; };
+		9D941E521BC98AFE005F38A6 /* tqsllib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E4A1BC98AFE005F38A6 /* tqsllib.cpp */; };
+		9D941E531BC98AFE005F38A6 /* xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D941E4B1BC98AFE005F38A6 /* xml.cpp */; };
+		9D941E541BC98AFE005F38A6 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9D941E4C1BC98AFE005F38A6 /* config.xml */; };
 		9DE1EA07141842C900F27275 /* ascii.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DA141842C900F27275 /* ascii.h */; };
 		9DE1EA08141842C900F27275 /* asciitab.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DB141842C900F27275 /* asciitab.h */; };
 		9DE1EA09141842C900F27275 /* expat.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DC141842C900F27275 /* expat.h */; };
@@ -31,24 +47,8 @@
 		9DE1EA17141842C900F27275 /* xmltok_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9EA141842C900F27275 /* xmltok_impl.c */; };
 		9DE1EA18141842C900F27275 /* xmltok_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9EB141842C900F27275 /* xmltok_impl.h */; };
 		9DE1EA19141842C900F27275 /* xmltok_ns.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9EC141842C900F27275 /* xmltok_ns.c */; };
-		9DE1EA1A141842C900F27275 /* adif.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9EE141842C900F27275 /* adif.cpp */; };
-		9DE1EA1B141842C900F27275 /* adif.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9EF141842C900F27275 /* adif.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DE1EA1C141842C900F27275 /* cabrillo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9F0141842C900F27275 /* cabrillo.cpp */; };
-		9DE1EA1D141842C900F27275 /* cabrillo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9F1141842C900F27275 /* cabrillo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DE1EA23141842C900F27275 /* location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9F7141842C900F27275 /* location.cpp */; };
-		9DE1EA24141842C900F27275 /* location.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9F8141842C900F27275 /* location.h */; };
-		9DE1EA25141842C900F27275 /* openssl_cert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9F9141842C900F27275 /* openssl_cert.cpp */; };
-		9DE1EA26141842C900F27275 /* openssl_cert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9FA141842C900F27275 /* openssl_cert.h */; };
-		9DE1EA29141842C900F27275 /* tqslconvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1E9FD141842C900F27275 /* tqslconvert.cpp */; };
-		9DE1EA2A141842C900F27275 /* tqslconvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9FE141842C900F27275 /* tqslconvert.h */; };
-		9DE1EA2B141842C900F27275 /* tqslerrno.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9FF141842C900F27275 /* tqslerrno.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DE1EA2E141842C900F27275 /* tqsllib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1EA02141842C900F27275 /* tqsllib.cpp */; };
-		9DE1EA2F141842C900F27275 /* tqsllib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1EA03141842C900F27275 /* tqsllib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DE1EA31141842C900F27275 /* xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1EA05141842C900F27275 /* xml.cpp */; };
-		9DE1EA32141842C900F27275 /* xml.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1EA06141842C900F27275 /* xml.h */; };
 		9DFBB8EC11E3F3A20062D3F9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFBB8EA11E3F3A20062D3F9 /* libz.dylib */; };
 		9DFBB91C11E3F3B30062D3F9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFBB91B11E3F3B30062D3F9 /* CoreFoundation.framework */; };
-		9DFBBB2711E40BB60062D3F9 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9DFBBB2611E40BAB0062D3F9 /* config.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,8 +71,24 @@
 		32DBCF5E0370ADEE00C91783 /* TqslLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TqslLib_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* TqslLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TqslLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D210274186611BF00D2DF48 /* winstrdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winstrdefs.h; sourceTree = "<group>"; };
 		9D941E311BC984EE005F38A6 /* libdb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdb.dylib; path = ../../../../usr/local/lib/libdb.dylib; sourceTree = "<group>"; };
+		9D941E331BC98AD8005F38A6 /* adif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adif.h; path = external/trustedqsl/src/adif.h; sourceTree = SOURCE_ROOT; };
+		9D941E341BC98AD8005F38A6 /* cabrillo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cabrillo.h; path = external/trustedqsl/src/cabrillo.h; sourceTree = SOURCE_ROOT; };
+		9D941E351BC98AD8005F38A6 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = location.h; path = external/trustedqsl/src/location.h; sourceTree = SOURCE_ROOT; };
+		9D941E361BC98AD8005F38A6 /* openssl_cert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openssl_cert.h; path = external/trustedqsl/src/openssl_cert.h; sourceTree = SOURCE_ROOT; };
+		9D941E371BC98AD8005F38A6 /* tqslconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tqslconvert.h; path = external/trustedqsl/src/tqslconvert.h; sourceTree = SOURCE_ROOT; };
+		9D941E381BC98AD8005F38A6 /* tqslerrno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tqslerrno.h; path = external/trustedqsl/src/tqslerrno.h; sourceTree = SOURCE_ROOT; };
+		9D941E391BC98AD8005F38A6 /* tqsllib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tqsllib.h; path = external/trustedqsl/src/tqsllib.h; sourceTree = SOURCE_ROOT; };
+		9D941E3A1BC98AD8005F38A6 /* xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xml.h; path = external/trustedqsl/src/xml.h; sourceTree = SOURCE_ROOT; };
+		9D941E431BC98AE5005F38A6 /* winstrdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = winstrdefs.h; path = external/trustedqsl/src/winstrdefs.h; sourceTree = SOURCE_ROOT; };
+		9D941E451BC98AFE005F38A6 /* adif.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = adif.cpp; path = external/trustedqsl/src/adif.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E461BC98AFE005F38A6 /* cabrillo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cabrillo.cpp; path = external/trustedqsl/src/cabrillo.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E471BC98AFE005F38A6 /* location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = location.cpp; path = external/trustedqsl/src/location.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E481BC98AFE005F38A6 /* openssl_cert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_cert.cpp; path = external/trustedqsl/src/openssl_cert.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E491BC98AFE005F38A6 /* tqslconvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tqslconvert.cpp; path = external/trustedqsl/src/tqslconvert.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E4A1BC98AFE005F38A6 /* tqsllib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tqsllib.cpp; path = external/trustedqsl/src/tqsllib.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E4B1BC98AFE005F38A6 /* xml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xml.cpp; path = external/trustedqsl/src/xml.cpp; sourceTree = SOURCE_ROOT; };
+		9D941E4C1BC98AFE005F38A6 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = external/trustedqsl/src/config.xml; sourceTree = SOURCE_ROOT; };
 		9DE1E9DA141842C900F27275 /* ascii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ascii.h; sourceTree = "<group>"; };
 		9DE1E9DB141842C900F27275 /* asciitab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asciitab.h; sourceTree = "<group>"; };
 		9DE1E9DC141842C900F27275 /* expat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expat.h; sourceTree = "<group>"; };
@@ -92,25 +108,9 @@
 		9DE1E9EA141842C900F27275 /* xmltok_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xmltok_impl.c; sourceTree = "<group>"; };
 		9DE1E9EB141842C900F27275 /* xmltok_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmltok_impl.h; sourceTree = "<group>"; };
 		9DE1E9EC141842C900F27275 /* xmltok_ns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xmltok_ns.c; sourceTree = "<group>"; };
-		9DE1E9EE141842C900F27275 /* adif.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adif.cpp; sourceTree = "<group>"; };
-		9DE1E9EF141842C900F27275 /* adif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adif.h; sourceTree = "<group>"; };
-		9DE1E9F0141842C900F27275 /* cabrillo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cabrillo.cpp; sourceTree = "<group>"; };
-		9DE1E9F1141842C900F27275 /* cabrillo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cabrillo.h; sourceTree = "<group>"; };
-		9DE1E9F7141842C900F27275 /* location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = location.cpp; sourceTree = "<group>"; };
-		9DE1E9F8141842C900F27275 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = location.h; sourceTree = "<group>"; };
-		9DE1E9F9141842C900F27275 /* openssl_cert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openssl_cert.cpp; sourceTree = "<group>"; };
-		9DE1E9FA141842C900F27275 /* openssl_cert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_cert.h; sourceTree = "<group>"; };
-		9DE1E9FD141842C900F27275 /* tqslconvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tqslconvert.cpp; sourceTree = "<group>"; };
-		9DE1E9FE141842C900F27275 /* tqslconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tqslconvert.h; sourceTree = "<group>"; };
-		9DE1E9FF141842C900F27275 /* tqslerrno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tqslerrno.h; sourceTree = "<group>"; };
-		9DE1EA02141842C900F27275 /* tqsllib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tqsllib.cpp; sourceTree = "<group>"; };
-		9DE1EA03141842C900F27275 /* tqsllib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tqsllib.h; sourceTree = "<group>"; };
-		9DE1EA05141842C900F27275 /* xml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xml.cpp; sourceTree = "<group>"; };
-		9DE1EA06141842C900F27275 /* xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xml.h; sourceTree = "<group>"; };
 		9DE1EA3914184A7100F27275 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
 		9DFBB8EA11E3F3A20062D3F9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = ../../../../../../Developer/SDKs/MacOSX10.6.sdk/usr/lib/libz.dylib; sourceTree = SOURCE_ROOT; };
 		9DFBB91B11E3F3B30062D3F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../../Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = SOURCE_ROOT; };
-		9DFBBB2611E40BAB0062D3F9 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = tqsllib/config.xml; sourceTree = SOURCE_ROOT; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -228,23 +228,23 @@
 		9DE1E9ED141842C900F27275 /* tqsllib */ = {
 			isa = PBXGroup;
 			children = (
-				9DE1EA03141842C900F27275 /* tqsllib.h */,
-				9DE1EA02141842C900F27275 /* tqsllib.cpp */,
-				9DE1E9FF141842C900F27275 /* tqslerrno.h */,
-				9DE1E9EF141842C900F27275 /* adif.h */,
-				9DE1E9EE141842C900F27275 /* adif.cpp */,
-				9DE1E9F1141842C900F27275 /* cabrillo.h */,
-				9DE1E9F0141842C900F27275 /* cabrillo.cpp */,
-				9DE1E9F8141842C900F27275 /* location.h */,
-				9DE1E9F7141842C900F27275 /* location.cpp */,
-				9DE1E9FA141842C900F27275 /* openssl_cert.h */,
-				9DE1E9F9141842C900F27275 /* openssl_cert.cpp */,
-				9DE1E9FE141842C900F27275 /* tqslconvert.h */,
-				9DE1E9FD141842C900F27275 /* tqslconvert.cpp */,
-				9DE1EA06141842C900F27275 /* xml.h */,
-				9DE1EA05141842C900F27275 /* xml.cpp */,
-				9D210274186611BF00D2DF48 /* winstrdefs.h */,
-				9DFBBB2611E40BAB0062D3F9 /* config.xml */,
+				9D941E391BC98AD8005F38A6 /* tqsllib.h */,
+				9D941E331BC98AD8005F38A6 /* adif.h */,
+				9D941E451BC98AFE005F38A6 /* adif.cpp */,
+				9D941E341BC98AD8005F38A6 /* cabrillo.h */,
+				9D941E461BC98AFE005F38A6 /* cabrillo.cpp */,
+				9D941E351BC98AD8005F38A6 /* location.h */,
+				9D941E471BC98AFE005F38A6 /* location.cpp */,
+				9D941E361BC98AD8005F38A6 /* openssl_cert.h */,
+				9D941E481BC98AFE005F38A6 /* openssl_cert.cpp */,
+				9D941E371BC98AD8005F38A6 /* tqslconvert.h */,
+				9D941E491BC98AFE005F38A6 /* tqslconvert.cpp */,
+				9D941E381BC98AD8005F38A6 /* tqslerrno.h */,
+				9D941E4A1BC98AFE005F38A6 /* tqsllib.cpp */,
+				9D941E3A1BC98AD8005F38A6 /* xml.h */,
+				9D941E4B1BC98AFE005F38A6 /* xml.cpp */,
+				9D941E4C1BC98AFE005F38A6 /* config.xml */,
+				9D941E431BC98AE5005F38A6 /* winstrdefs.h */,
 			);
 			path = tqsllib;
 			sourceTree = SOURCE_ROOT;
@@ -256,29 +256,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE1EA2F141842C900F27275 /* tqsllib.h in Headers */,
-				9DE1EA1B141842C900F27275 /* adif.h in Headers */,
-				9DE1EA1D141842C900F27275 /* cabrillo.h in Headers */,
-				9DE1EA2B141842C900F27275 /* tqslerrno.h in Headers */,
+				9D941E3E1BC98AD8005F38A6 /* openssl_cert.h in Headers */,
+				9D941E411BC98AD8005F38A6 /* tqsllib.h in Headers */,
 				9DE1EA07141842C900F27275 /* ascii.h in Headers */,
+				9D941E441BC98AE5005F38A6 /* winstrdefs.h in Headers */,
 				9DE1EA08141842C900F27275 /* asciitab.h in Headers */,
 				9DE1EA09141842C900F27275 /* expat.h in Headers */,
 				9DE1EA0A141842C900F27275 /* expat_config.h in Headers */,
+				9D941E3B1BC98AD8005F38A6 /* adif.h in Headers */,
 				9DE1EA0B141842C900F27275 /* expat_external.h in Headers */,
 				9DE1EA0C141842C900F27275 /* iasciitab.h in Headers */,
+				9D941E3F1BC98AD8005F38A6 /* tqslconvert.h in Headers */,
+				9D941E3D1BC98AD8005F38A6 /* location.h in Headers */,
 				9DE1EA0D141842C900F27275 /* internal.h in Headers */,
 				9DE1EA0E141842C900F27275 /* latin1tab.h in Headers */,
 				9DE1EA0F141842C900F27275 /* macconfig.h in Headers */,
+				9D941E3C1BC98AD8005F38A6 /* cabrillo.h in Headers */,
+				9D941E421BC98AD8005F38A6 /* xml.h in Headers */,
 				9DE1EA10141842C900F27275 /* nametab.h in Headers */,
 				9DE1EA11141842C900F27275 /* utf8tab.h in Headers */,
-				9D210275186611BF00D2DF48 /* winstrdefs.h in Headers */,
+				9D941E401BC98AD8005F38A6 /* tqslerrno.h in Headers */,
 				9DE1EA14141842C900F27275 /* xmlrole.h in Headers */,
 				9DE1EA16141842C900F27275 /* xmltok.h in Headers */,
 				9DE1EA18141842C900F27275 /* xmltok_impl.h in Headers */,
-				9DE1EA24141842C900F27275 /* location.h in Headers */,
-				9DE1EA26141842C900F27275 /* openssl_cert.h in Headers */,
-				9DE1EA2A141842C900F27275 /* tqslconvert.h in Headers */,
-				9DE1EA32141842C900F27275 /* xml.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFBBB2711E40BB60062D3F9 /* config.xml in Resources */,
+				9D941E541BC98AFE005F38A6 /* config.xml in Resources */,
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,17 +351,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE1EA12141842C900F27275 /* xmlparse.c in Sources */,
+				9D941E531BC98AFE005F38A6 /* xml.cpp in Sources */,
+				9D941E4E1BC98AFE005F38A6 /* cabrillo.cpp in Sources */,
+				9D941E501BC98AFE005F38A6 /* openssl_cert.cpp in Sources */,
 				9DE1EA13141842C900F27275 /* xmlrole.c in Sources */,
 				9DE1EA15141842C900F27275 /* xmltok.c in Sources */,
+				9D941E4F1BC98AFE005F38A6 /* location.cpp in Sources */,
 				9DE1EA17141842C900F27275 /* xmltok_impl.c in Sources */,
+				9D941E521BC98AFE005F38A6 /* tqsllib.cpp in Sources */,
 				9DE1EA19141842C900F27275 /* xmltok_ns.c in Sources */,
-				9DE1EA1A141842C900F27275 /* adif.cpp in Sources */,
-				9DE1EA1C141842C900F27275 /* cabrillo.cpp in Sources */,
-				9DE1EA23141842C900F27275 /* location.cpp in Sources */,
-				9DE1EA25141842C900F27275 /* openssl_cert.cpp in Sources */,
-				9DE1EA29141842C900F27275 /* tqslconvert.cpp in Sources */,
-				9DE1EA2E141842C900F27275 /* tqsllib.cpp in Sources */,
-				9DE1EA31141842C900F27275 /* xml.cpp in Sources */,
+				9D941E511BC98AFE005F38A6 /* tqslconvert.cpp in Sources */,
+				9D941E4D1BC98AFE005F38A6 /* adif.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

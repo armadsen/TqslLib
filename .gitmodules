@@ -1,0 +1,3 @@
+[submodule "external/trustedqsl"]
+	path = external/trustedqsl
+	url = https://armadsen@git.code.sf.net/u/armadsen/trustedqsl
