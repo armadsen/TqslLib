@@ -13,7 +13,7 @@
 		9D941E3B1BC98AD8005F38A6 /* adif.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E331BC98AD8005F38A6 /* adif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D941E3C1BC98AD8005F38A6 /* cabrillo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E341BC98AD8005F38A6 /* cabrillo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D941E3D1BC98AD8005F38A6 /* location.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E351BC98AD8005F38A6 /* location.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D941E3E1BC98AD8005F38A6 /* openssl_cert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E361BC98AD8005F38A6 /* openssl_cert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D941E3E1BC98AD8005F38A6 /* openssl_cert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E361BC98AD8005F38A6 /* openssl_cert.h */; };
 		9D941E3F1BC98AD8005F38A6 /* tqslconvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E371BC98AD8005F38A6 /* tqslconvert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D941E401BC98AD8005F38A6 /* tqslerrno.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E381BC98AD8005F38A6 /* tqslerrno.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D941E411BC98AD8005F38A6 /* tqsllib.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E391BC98AD8005F38A6 /* tqsllib.h */; settings = {ATTRIBUTES = (Public, ); }; };
