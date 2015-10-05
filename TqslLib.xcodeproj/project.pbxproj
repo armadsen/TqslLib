@@ -11,7 +11,7 @@
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		9D210275186611BF00D2DF48 /* winstrdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D210274186611BF00D2DF48 /* winstrdefs.h */; };
-		9D210277186616D500D2DF48 /* libdb-5.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D210276186616D500D2DF48 /* libdb-5.3.dylib */; };
+		9D941E321BC984EE005F38A6 /* libdb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D941E311BC984EE005F38A6 /* libdb.dylib */; };
 		9DE1EA07141842C900F27275 /* ascii.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DA141842C900F27275 /* ascii.h */; };
 		9DE1EA08141842C900F27275 /* asciitab.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DB141842C900F27275 /* asciitab.h */; };
 		9DE1EA09141842C900F27275 /* expat.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE1E9DC141842C900F27275 /* expat.h */; };
@@ -72,7 +72,7 @@
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* TqslLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TqslLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D210274186611BF00D2DF48 /* winstrdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winstrdefs.h; sourceTree = "<group>"; };
-		9D210276186616D500D2DF48 /* libdb-5.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libdb-5.3.dylib"; path = "/usr/local/Cellar/berkeley-db/5.3.21/lib/libdb-5.3.dylib"; sourceTree = "<absolute>"; };
+		9D941E311BC984EE005F38A6 /* libdb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdb.dylib; path = ../../../../usr/local/lib/libdb.dylib; sourceTree = "<group>"; };
 		9DE1E9DA141842C900F27275 /* ascii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ascii.h; sourceTree = "<group>"; };
 		9DE1E9DB141842C900F27275 /* asciitab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asciitab.h; sourceTree = "<group>"; };
 		9DE1E9DC141842C900F27275 /* expat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expat.h; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D210277186616D500D2DF48 /* libdb-5.3.dylib in Frameworks */,
+				9D941E321BC984EE005F38A6 /* libdb.dylib in Frameworks */,
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				9DFBB8EC11E3F3A20062D3F9 /* libz.dylib in Frameworks */,
 				9DFBB91C11E3F3B30062D3F9 /* CoreFoundation.framework in Frameworks */,
@@ -172,7 +172,7 @@
 		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D210276186616D500D2DF48 /* libdb-5.3.dylib */,
+				9D941E311BC984EE005F38A6 /* libdb.dylib */,
 				9DFBB8EA11E3F3A20062D3F9 /* libz.dylib */,
 				9DE1EA3914184A7100F27275 /* libcrypto.dylib */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
