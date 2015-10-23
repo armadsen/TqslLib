@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FB461E1141AC83A00402AA2 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE1EA3914184A7100F27275 /* libcrypto.dylib */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		9D941E3B1BC98AD8005F38A6 /* adif.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E331BC98AD8005F38A6 /* adif.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +88,8 @@
 		9D941E4B1BC98AFE005F38A6 /* xml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xml.cpp; path = external/trustedqsl/src/xml.cpp; sourceTree = SOURCE_ROOT; };
 		9D941E4C1BC98AFE005F38A6 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = external/trustedqsl/src/config.xml; sourceTree = SOURCE_ROOT; };
 		9D941E5B1BC995E0005F38A6 /* Tqsl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tqsl.h; sourceTree = "<group>"; };
+		9DCDF8381BD9D5FE00FC0774 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libopenssl/lib/Mac/libcrypto.a; sourceTree = "<group>"; };
+		9DCDF8391BD9D5FE00FC0774 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libopenssl/lib/Mac/libssl.a; sourceTree = "<group>"; };
 		9DE1E9DA141842C900F27275 /* ascii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ascii.h; sourceTree = "<group>"; };
 		9DE1E9DB141842C900F27275 /* asciitab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asciitab.h; sourceTree = "<group>"; };
 		9DE1E9DC141842C900F27275 /* expat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expat.h; sourceTree = "<group>"; };
@@ -122,7 +123,6 @@
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				9DFBB8EC11E3F3A20062D3F9 /* libz.dylib in Frameworks */,
 				9DFBB91C11E3F3B30062D3F9 /* CoreFoundation.framework in Frameworks */,
-				6FB461E1141AC83A00402AA2 /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +154,7 @@
 		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9DCDF88A1BD9D79F00FC0774 /* Static Libraries */,
 				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
 				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
 			);
@@ -196,6 +197,15 @@
 				32DBCF5E0370ADEE00C91783 /* TqslLib_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		9DCDF88A1BD9D79F00FC0774 /* Static Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDF8381BD9D5FE00FC0774 /* libcrypto.a */,
+				9DCDF8391BD9D5FE00FC0774 /* libssl.a */,
+			);
+			name = "Static Libraries";
 			sourceTree = "<group>";
 		};
 		9DE1E9D9141842C900F27275 /* libexpat */ = {
@@ -311,10 +321,10 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "TqslLib" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -403,13 +413,19 @@
 					/usr/local/include,
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libopenssl/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"/usr/local/Cellar/berkeley-db/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openreelsoftware.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = Tqsl;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -437,13 +453,19 @@
 					/usr/local/include,
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libopenssl/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"/usr/local/Cellar/berkeley-db/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.openreelsoftware.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = Tqsl;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -453,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "MAC=1";
@@ -460,11 +483,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
 			};
@@ -482,10 +502,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
-				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
-				OTHER_LDFLAGS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
 			};
