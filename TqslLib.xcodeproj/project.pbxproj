@@ -255,7 +255,8 @@
 				9D941E4C1BC98AFE005F38A6 /* config.xml */,
 				9D941E431BC98AE5005F38A6 /* winstrdefs.h */,
 			);
-			path = tqsllib;
+			name = tqsllib;
+			path = external/trustedqsl;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
