@@ -393,6 +393,7 @@
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -410,14 +411,16 @@
 					"TQSLLIB_VERSION_MAJOR=2",
 				);
 				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
 					"$(inherited)",
-					"${PROJECT_DIR}/berkeley-db/include",
-					"${PROJECT_DIR}/libopenssl/include",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libopenssl/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"${PROJECT_DIR}/libopenssl/lib/**",
+					"/usr/local/Cellar/berkeley-db/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
 				OTHER_LDFLAGS = (
 					"-lssl",
@@ -432,6 +435,7 @@
 		1DEB91AF08733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -447,14 +451,16 @@
 					"TQSLLIB_VERSION_MAJOR=2",
 				);
 				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
 					"$(inherited)",
-					"${PROJECT_DIR}/berkeley-db/include",
-					"${PROJECT_DIR}/libopenssl/include",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/libopenssl/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"${PROJECT_DIR}/libopenssl/lib/**",
+					"/usr/local/Cellar/berkeley-db/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
 				OTHER_LDFLAGS = (
 					"-lssl",
