@@ -417,7 +417,7 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"${PROJECT_DIR}/libopenssl/lib/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
 				OTHER_LDFLAGS = (
 					"-lssl",
@@ -454,7 +454,7 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"${PROJECT_DIR}/libopenssl/lib/**",
+					"${PROJECT_DIR}/libopenssl/lib/Mac",
 				);
 				OTHER_LDFLAGS = (
 					"-lssl",
