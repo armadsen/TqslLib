@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		9D941E3B1BC98AD8005F38A6 /* adif.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E331BC98AD8005F38A6 /* adif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D941E3C1BC98AD8005F38A6 /* cabrillo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D941E341BC98AD8005F38A6 /* cabrillo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,7 +68,6 @@
 		32DBCF5E0370ADEE00C91783 /* TqslLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TqslLib_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Tqsl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tqsl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D24C3D12537ABAC001E8869 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9D941E331BC98AD8005F38A6 /* adif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adif.h; path = external/trustedqsl/src/adif.h; sourceTree = SOURCE_ROOT; };
 		9D941E341BC98AD8005F38A6 /* cabrillo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cabrillo.h; path = external/trustedqsl/src/cabrillo.h; sourceTree = SOURCE_ROOT; };
 		9D941E351BC98AD8005F38A6 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = location.h; path = external/trustedqsl/src/location.h; sourceTree = SOURCE_ROOT; };
@@ -165,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5A0486A6940098B216 /* Info.plist */,
-				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -330,10 +327,6 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
-				fr,
-				de,
-				ja,
-				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* TqslLib */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -351,7 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D941E541BC98AFE005F38A6 /* config.xml in Resources */,
-				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,17 +370,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D24C3D12537ABAC001E8869 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
